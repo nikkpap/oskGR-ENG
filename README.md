@@ -1,6 +1,6 @@
 # movian-plugins
 Movian Plugins repo
-Just an OSK for Movian with English and Greek qwerty...
+Just an OSK for Movian with Greek and English qwerty...
 
 
 by nikkpap @ 2018
