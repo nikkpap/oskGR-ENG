@@ -1,0 +1,98 @@
+#import "skin://osk/common.view"
+
+widget(container_y, {
+
+  spacing: 4;
+
+  widget(container_x, {
+    spacing: 4;
+    height: $ui.size * 2;
+    KEY("`", "~");
+    KEY("1", "!");
+    KEY("2", '@');
+    KEY("3", "#");
+    KEY("4", "$");
+    KEY("5", "%");
+    KEY("6", "^");
+    KEY("7", "&");
+    KEY("8", "*");
+    KEY("9", "(");
+    KEY("0", ")");
+    KEY("-", "_");
+    KEY("=", "+");
+    ACTION("BS", targetedEvent("input", Backspace), 2.5);
+  });
+
+  widget(container_x, {
+    spacing: 4;
+    height: $ui.size * 2;
+    space(1.4);
+    KEY(";", ":", 1, 1);
+    KEY("ς", "ς");
+    KEY("ε", "Ε");
+    KEY("ρ", "Ρ");
+    KEY("τ", "Τ");
+    KEY("υ", "Υ");
+    KEY("θ", "Θ");
+    KEY("ι", "Ι");
+    KEY("ο", "Ο");
+    KEY("π", "Π");
+    KEY("[", "{");
+    KEY("]", "}");
+    space(1.5);
+  });
+
+  widget(container_x, {
+    spacing: 4;
+    height: $ui.size * 2;
+    space(0);
+    ACTION("Lock", {
+      $ui.osk.caps = !$ui.osk.caps;
+    }, 2.0, $ui.osk.caps);
+    KEY("α", "Α");
+    KEY("σ", "Σ");
+    KEY("δ", "Δ");
+    KEY("φ", "Φ");
+    KEY("γ", "Γ");
+    KEY("η", "Η");
+    KEY("ξ", "Ξ");
+    KEY("κ", "Κ");
+    KEY("λ", "Λ");
+    KEY(";", ":");
+    KEY("'", "“");
+    KEY("\\", "|");
+    space(1);
+  });
+
+  widget(container_x, {
+    spacing: 4;
+    height: $ui.size * 2;
+    ACTION("Shift", {
+      $ui.osk.shift = !$ui.osk.shift;
+    }, 1.5, $ui.osk.shift);
+    KEY("ζ", "Ζ");
+    KEY("χ", "Χ");
+    KEY("ψ", "Ψ");
+    KEY("ω", "Ω");
+    KEY("β", "Β");
+    KEY("ν", "Ν");
+    KEY("μ", "Μ");
+    KEY(",", "<");
+    KEY(".", ">");
+    KEY("/", "?");
+    KEY("@", ".gr");
+
+    ACTION("Shift", {
+      $ui.osk.shift = !$ui.osk.shift;
+    }, 1.5, $ui.osk.shift);
+  });
+
+
+  widget(container_x, {
+    spacing: 4;
+    height: $ui.size * 2;
+    space(0.75);
+    KEY_("κενο", " ");
+    space(1);
+  });
+});
