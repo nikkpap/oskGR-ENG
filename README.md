@@ -1,4 +1,4 @@
-# movian-plugin-oskGR-ENG
+# oskGR-ENG
 oskGR-ENG
 Just an OSK for Movian Media Center with Greek and English full qwerty...
 
