@@ -1,0 +1,23 @@
+{
+  "synopsis": "Greek and English OSK interface for Movian.",
+  "description": "This plugin installs on Movian, Greek and English OSK interface.",
+  "homepage": "www.paok.gr",
+  "type": "views",
+  "id": "ell_osk",
+  "showtimeVersion": "5.0.0",
+  "version": "1.0.1",
+  "author": "nikkpap",
+  "title": "Gr & Eng OSK",
+  "category": "glwosk",
+  "icon": "logo.png",
+  "glwviews": [{
+    "class": "osk",
+    "title": "Gr",
+    "file": "Ell.view"
+  },
+  {
+    "class": "osk",
+    "title": "Eng",
+    "file": "Eng.view"
+  }]
+}
